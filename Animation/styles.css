@@ -1,0 +1,85 @@
+
+  body {
+    animation-name: example;
+    animation-duration: 4s;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: rgb(162, 162, 100);}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.animation-box {
+  text-align: center
+
+}
+
+.animation-box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.content-section {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #219c52;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
